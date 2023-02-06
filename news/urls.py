@@ -5,4 +5,5 @@ urlpatterns = [
     path('xodim/', DemoListView2.as_view(), name='xodim'),
     path('registr/', DemoListView3.as_view(), name='registr'),
     path('enter/', DemoListView4.as_view(), name='enter')
+
 ]
