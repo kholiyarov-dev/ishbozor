@@ -1,29 +1,116 @@
 
-
 {% load static %}
 
 
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Century Gothic";
+}
 
-
-.page1{
-    margin: 0px;
-    padding: 0px;
-    font-family: Arial;
-    background-image: url("/static/css/images/4.jpg");
-    background-repeat: no-repeat;
+/*===========     HOME.PAGE HERE    ====================*/
+.page{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/static/css/images/4.jpg");
+    background-position: center;
     background-size: cover;
-    letter-spacing: 0.1px;
-    font-family: 'Open Sans',  sans-serif;
-    text-align: center;
+    height: 100vh;
 }
 
 .page2{
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    color: blue;
-    background-image:  url("/static/css/images/2.jpg");
+    padding: 15px;
+    /*max-width: 1200px;*/
+    /*margin: auto;*/
+}
+.page3 img {
+    float: left;
+    width: 160px;
+    height: 100px;
+    border-radius: 1em;
 }
 .page3{
-    background-image:  url("/static/css/images/3.jpg");
+    margin-left: 15px;
+    padding-top: 10px;
+    text-align: left;
+    font-size: 70px;
 }
+.page4{
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+.page4 li{
+    display: inline-block;
+}
+.page4 li a{
+    text-decoration: none;
+    color: navy;
+    padding: 5px 20px;
+    border: 1px solid #fff;
+    transition: 0.6s ease;
+    border-radius: 1em;
+}
+.page4 li a:hover{
+    background-color: cyan;
+    color: crimson;
+}
+.page5 a{
+    background-color: azure;
+    color: crimson;
+    margin: 2px;
+}
+.page6{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.page6 h1{
+    color: #fff;
+    font-size: 40px;
+}
+/*.page7{*/
+/*    position: absolute;*/
+/*    top: 60%;*/
+/*    left: 50%;*/
+/*    transform: translate(-50%,-50%);*/
+/*    font-size: 20px;*/
+/*}*/
+.page7{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    text-decoration: none;
+}
+.page8{
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    color: navy;
+    text-decoration: none;
+    transition: 0.6s ease;
+    background-color: azure;
+}
+.page9{
+    border: 1px solid #ffffff;
+    padding: 10px 30px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    background-color: blue;
+    margin: 7px;
+}
+/*.page8:hover{*/
+/*    background-color: cyan;*/
+/*    color: crimson;*/
+/*    text-decoration: none;*/
+/*}*/
+.page9:hover{
+    color: crimson;
+    text-decoration: none;
+}
+
+
+
+
+

@@ -9,32 +9,38 @@
 </style>
 
 <body class="page1">
-<h1 class="page2">Hi Jackson</h1>
-<p class="page3">1
+    <header class="page">
+        <div class="page2">
+            <div class="page3">
+                <img src="{% static 'css/images/ishbozori.jpg' %}">
+            </div>
+            <ul class="page4">
+                <li class="page5"><a href="{% url 'home' %}">Ish Topish</a></li>
+                <li class="page5"><a href="{% url 'xodim' %}">Xodim Topish</a></li>
+                <li class="page5"><a href="{% url 'registr' %}">Vakansiya yaratish</a></li>
+                <li class="page5"><a href="{% url 'enter' %}">Ro'yxatdan O'tish</a></li>
+                <li class="page5"><a href="#">Kirish</a></li>
+            </ul>
+        </div>
+        <div class="page6">
+            <h1>Karyerangizni biz bilan boshlang,  Orzuyingizdagi ishni toping</h1>
+        </div>
+        <div class="page7">
+            <a href="#" class="page8">Kasbni tanlang</a>
+            <a href="#" class="page9">Izlash</a>
+        </div>
+    </header>
 
-a
-(1)
-: the original words and form of a written or printed work
-(2)
-: an edited or emended copy of an original work
-b
-: a work containing such text
-2
-a
-: the main body of printed or written matter on a page
-b
-: the principal part of a book exclusive of front and back matter
-c
-: the printed score of a musical composition
-: a verse or passage of Scripture chosen especially for the subject of a sermon or for authoritative support (as for a doctrine)
-: a passage from an authoritative source providing an introduction or basis (as for a speech)
-: a source of information or authority
-: THEME, TOPIC
-: the words of something (such as a poem) set to music
-</p>
-<div class="page4">
-    <div class="loggo"></div><a href="{% url 'home' %}"><img src="{% static 'css/images/3.jpg' %}"></a></li>
-</div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 {% endblock content %}

@@ -10,8 +10,12 @@ class DemoListView(ListView):
 
 class DemoListView2(ListView):
     model = Post
-    template_name = 'about.html'
+    template_name = 'xodim.html'
 
 class DemoListView3(ListView):
     model = Post
-    template_name = 'services.html'
+    template_name = 'registr.html'
+
+class DemoListView4(ListView):
+    model = Post
+    template_name = 'enter.html'
