@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'news/base.html' %}
 {% load static %}
 {% block title %} Main version {% endblock title %}
 
@@ -6,7 +6,7 @@
 
 <style>
 .page{
-    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/static/css/images/4.jpg");
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("{% static 'news/css/images/4.jpg' %}");
     background-position: center;
     background-size: cover;
     height: 100vh;
@@ -114,7 +114,7 @@
     <header class="page">
         <div class="page2">
             <div class="page3">
-                <img src="{% static 'css/images/ishbozori.jpg' %}">
+                <img src="{% static 'news/css/images/ishbozori.jpg' %}">
             </div>
             <div class="page10">
                 <div class="line"></div>
@@ -138,19 +138,8 @@
         </div>
     </header>
 
-
-
-
-
-
-
-
-
-
-
-
 </body>
 {% endblock content %}
 {% block js_block %}
-    <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+    <script type="text/javascript" src="{% static 'news/js/main.js' %}"></script>
 {% endblock %}
