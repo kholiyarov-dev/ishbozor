@@ -1,0 +1,59 @@
+{% extends 'news/base.html' %}
+{% load static %}
+{% block title %} Main version {% endblock title %}
+{% block content %}
+
+
+
+
+<style>
+body {
+    background: #e3e9f7;
+}
+header {
+    width: 80%;
+    height: 70px;
+    background: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-radius: 0 0 10px 10px;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1150px) {
+    header {
+        width: 95%;
+        padding: 0 20px;
+    }
+}
+</style>
+ <body>
+    <header>
+        <div class="logo">
+            <img src="{% static 'news/css/images/ishbozori.jpg' %}">
+        </div>
+        <input type="checkbox" id="nav_check" hidden>
+        <nav>
+            <div class="logo">
+                <img src="{% static 'news/css/images/ishbozori.jpg' %}">
+            </div>
+            <ul>
+                <li><a href="{% url 'home' %} ">Ish Topish</a></li>
+                <li><a href="{% url 'xodim' %}">Xodim Topish</a></li>
+                <li><a href="{% url 'vakant' %}">Vakansiya yaratish</a></li>
+                <li><a href="{% url 'registr' %}">Ro'yxatdan O'tish</a></li>
+                <li><a href="{% url 'enter' %}">Kirish</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+ </body>
+<div>vakant</div>
+
+
+{% endblock content %}

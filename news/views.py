@@ -24,3 +24,7 @@ class DemoListView3(ListView):
 class DemoListView4(ListView):
     model = Post
     template_name = 'news/enter.html'
+
+class DemoListView5(ListView):
+    model = Post
+    template_name = 'news/vakant.html'
